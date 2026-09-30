@@ -1,6 +1,7 @@
 // HeavenlyPad/Core/Emulator.swift
 
 import Foundation
+import AppKit
 
 final class Emulator {
     let bus = Bus()
@@ -12,6 +13,24 @@ final class Emulator {
     var frontend: LibretroFrontend?
     private var isReady = false
     private let lock = NSLock()
+    private var terminationObserver: NSObjectProtocol?
+
+    init() {
+        terminationObserver = NotificationCenter.default.addObserver(
+            forName: NSApplication.willTerminateNotification,
+            object: nil,
+            queue: .main
+        ) { [weak self] _ in
+            self?.shutdown()
+        }
+    }
+
+    deinit {
+        if let terminationObserver {
+            NotificationCenter.default.removeObserver(terminationObserver)
+        }
+        shutdown()
+    }
     
     func boot(romURL: URL) throws {
         lock.lock()
@@ -28,5 +47,17 @@ final class Emulator {
         if isReady {
             frontend?.runFrame()
         }
+    }
+
+    func shutdown() {
+        lock.lock()
+        defer { lock.unlock() }
+        guard frontend != nil || isReady else { return }
+
+        isReady = false
+        touchscreen.isPressed = false
+        audioEngine.stop()
+        frontend?.close()
+        frontend = nil
     }
 }

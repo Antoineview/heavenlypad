@@ -41,6 +41,7 @@ private func inputStateCallback(port: UInt32, device: UInt32, index: UInt32, id:
 
 public final class LibretroFrontend {
     private var handle: UnsafeMutableRawPointer?
+    private var isGameLoaded = false
     
     typealias retro_init_t = @convention(c) () -> Void
     typealias retro_deinit_t = @convention(c) () -> Void
@@ -82,10 +83,18 @@ public final class LibretroFrontend {
     }
     
     deinit {
-        if let handle = handle {
-            retro_deinit()
-            dlclose(handle)
+        close()
+    }
+
+    func close() {
+        guard let handle else { return }
+        if isGameLoaded {
+            retro_unload_game()
+            isGameLoaded = false
         }
+        retro_deinit()
+        dlclose(handle)
+        self.handle = nil
         if globalFrontend === self {
             globalFrontend = nil
             sharedEmulator = nil
@@ -93,8 +102,8 @@ public final class LibretroFrontend {
     }
     
     private func loadCore() {
-        guard let dylibURL = Bundle.main.url(forResource: "melonds_libretro", withExtension: "dylib") else {
-            fatalError("Could not find melonds_libretro.dylib in resources")
+        guard let dylibURL = Bundle.main.privateFrameworksURL?.appendingPathComponent("melonds_libretro.dylib") else {
+            fatalError("Could not find the app's Frameworks directory")
         }
         let dylibPath = dylibURL.path
         
@@ -155,6 +164,7 @@ public final class LibretroFrontend {
             if !retro_load_game(&info) {
                 fatalError("Failed to load game")
             }
+            isGameLoaded = true
         }
     }
     

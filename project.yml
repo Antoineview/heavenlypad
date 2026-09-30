@@ -12,11 +12,19 @@ targets:
     deploymentTarget: "14.0"
     sources:
       - path: HeavenlyPad
+        excludes:
+          - Resources/melonds_libretro.dylib
       - path: rhpad.icon
     dependencies:
       - package: swift-atomics
         product: Atomics
+      - framework: HeavenlyPad/Resources/melonds_libretro.dylib
+        embed: true
+        link: false
+        codeSign: true
     settings:
+      ARCHS: arm64
+      CODE_SIGN_ENTITLEMENTS: HeavenlyPad.entitlements
       GENERATE_INFOPLIST_FILE: YES
       ASSETCATALOG_COMPILER_APPICON_NAME: rhpad
       ENABLE_HARDENED_RUNTIME: YES
