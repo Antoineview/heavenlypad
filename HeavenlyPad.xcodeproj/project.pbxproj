@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0989DBE05851A255D56E2974 /* IORegisters9.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D099DF614C74E7593601224 /* IORegisters9.swift */; };
+		09A121E5B97A08A1895389E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757CCE94CD5DDD1BEAD32A6 /* ContentView.swift */; };
+		0E328521BAA5E475E5A5560C /* melonds_libretro.dylib in Resources */ = {isa = PBXBuildFile; fileRef = CA7C360B124B722BB409C5BB /* melonds_libretro.dylib */; };
+		1680B207900BDA5AA6D5E78E /* Bus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F905086E54934026ED425A4 /* Bus.swift */; };
+		17FB87305170906862117694 /* rhpad.icon in Resources */ = {isa = PBXBuildFile; fileRef = F1BF2B27012471FAE326B592 /* rhpad.icon */; };
+		19F2A27BC9F3D2FE69E03F66 /* BIOSHLE.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC827E81147114461115A497 /* BIOSHLE.swift */; };
+		28C23D45379F5B9AA964B5BF /* Touchscreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FD0D1DC8AC02DB392C0640A /* Touchscreen.swift */; };
+		2BE7A5CA3D9FB7868CD85B75 /* LibretroFrontend.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBCB73ABAF6C54B6A6DDE2C /* LibretroFrontend.swift */; };
+		3393973CDC88022C05284474 /* VRAMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E368AA838384A239F7B2D9 /* VRAMController.swift */; };
+		3BC0AC3004DEC31483D8B863 /* SoundChannel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E255E2D685000CD345E1F6 /* SoundChannel.swift */; };
+		3D8CEE0A9B40D548E9E2DF42 /* Timers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDDE62A32149E33BA5489A /* Timers.swift */; };
+		478B91080F1AF68A312E1966 /* GPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94862D65A2F9E717743946FF /* GPU.swift */; };
+		4D17046FC9698FDD5F18FAE6 /* IORegisters7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCF524A123F37B91778FE8 /* IORegisters7.swift */; };
+		590EB149459E136692F720EE /* Engine2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB49B659D13378BF31B926 /* Engine2D.swift */; };
+		5C16B1394052C54995FE12B3 /* SPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4052DD3492C4DC3AAE2ECD0A /* SPU.swift */; };
+		5CD1D68D1D0E41C06979F291 /* CP15.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF40419D803AEA23BBB6A8D1 /* CP15.swift */; };
+		66FD051482CD06C3874A286A /* DMA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332567EC4BF2525E072781EE /* DMA.swift */; };
+		6F4FDF06196D1FEADD0B23B8 /* Atomics in Frameworks */ = {isa = PBXBuildFile; productRef = C269EF7BEDB86645E4D44F90 /* Atomics */; };
+		7F36B89CCD375FF5C7C05638 /* ThumbInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDF355254348D214F81A0A6 /* ThumbInstructions.swift */; };
+		879A48395957C0BF20A40623 /* AudioEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62C7AA5B923A50A194393BD1 /* AudioEngine.swift */; };
+		973BE5F9CB53214077153E50 /* NDSLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117B485DAAAD6AD56D9894C6 /* NDSLoader.swift */; };
+		9764146CB2C0BB92FA537041 /* Emulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254605019BF27062364175EB /* Emulator.swift */; };
+		9874DDE1DA8666B338D6E85F /* RingBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0845D8C1C8BB109568C219A /* RingBuffer.swift */; };
+		A2B082A8672DCB9D7654DC91 /* CartridgeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8525E3AFFDDA73D23A94EA6 /* CartridgeInterface.swift */; };
+		A78253AF1C44C933A3DB7FF4 /* TrackpadDigitizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0DF75F203F70CC74675C62 /* TrackpadDigitizer.swift */; };
+		A8DF50C4AEAC0F0127766580 /* ARMInstructions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DD9D568B0AF2C6DE53C1C3 /* ARMInstructions.swift */; };
+		B4F7E6E9AF618E2FA2AE48CE /* ARMDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4837095F1D0B310FD9772D00 /* ARMDecoder.swift */; };
+		BF95912714D4BD00A6E9E3CD /* MetalRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01A39B8D5001652379473D0 /* MetalRenderer.swift */; };
+		C7FCE6014697BD2BDA7CF845 /* HeavenlyPadApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FA606D69474642014FB4D9 /* HeavenlyPadApp.swift */; };
+		D49E8C9180770CE9741BF2E7 /* dummy.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFF09036A3F1E815E241900 /* dummy.c */; };
+		E278D00944B68B007DDFD09F /* IPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E790625D82909417F881BC /* IPC.swift */; };
+		E39779871EC59F323B4874EB /* DirectBoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = E52DAB8AD04F8059C3FB911F /* DirectBoot.swift */; };
+		E59F5B344BE9FBFFF6DFB585 /* CPUState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 994BF6B781C8254E9CBAD625 /* CPUState.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EDDDE62A32149E33BA5489A /* Timers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timers.swift; sourceTree = "<group>"; };
+		117B485DAAAD6AD56D9894C6 /* NDSLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NDSLoader.swift; sourceTree = "<group>"; };
+		21BCF524A123F37B91778FE8 /* IORegisters7.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IORegisters7.swift; sourceTree = "<group>"; };
+		254605019BF27062364175EB /* Emulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emulator.swift; sourceTree = "<group>"; };
+		2757CCE94CD5DDD1BEAD32A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		332567EC4BF2525E072781EE /* DMA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMA.swift; sourceTree = "<group>"; };
+		3AFF09036A3F1E815E241900 /* dummy.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = dummy.c; sourceTree = "<group>"; };
+		3FD0D1DC8AC02DB392C0640A /* Touchscreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Touchscreen.swift; sourceTree = "<group>"; };
+		4052DD3492C4DC3AAE2ECD0A /* SPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SPU.swift; sourceTree = "<group>"; };
+		47E255E2D685000CD345E1F6 /* SoundChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundChannel.swift; sourceTree = "<group>"; };
+		4837095F1D0B310FD9772D00 /* ARMDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMDecoder.swift; sourceTree = "<group>"; };
+		58DD9D568B0AF2C6DE53C1C3 /* ARMInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARMInstructions.swift; sourceTree = "<group>"; };
+		5CEB49B659D13378BF31B926 /* Engine2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engine2D.swift; sourceTree = "<group>"; };
+		5F905086E54934026ED425A4 /* Bus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bus.swift; sourceTree = "<group>"; };
+		62C7AA5B923A50A194393BD1 /* AudioEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioEngine.swift; sourceTree = "<group>"; };
+		71080C713A7B872758242668 /* HeavenlyPad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeavenlyPad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78E368AA838384A239F7B2D9 /* VRAMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRAMController.swift; sourceTree = "<group>"; };
+		94862D65A2F9E717743946FF /* GPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPU.swift; sourceTree = "<group>"; };
+		994BF6B781C8254E9CBAD625 /* CPUState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUState.swift; sourceTree = "<group>"; };
+		9D099DF614C74E7593601224 /* IORegisters9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IORegisters9.swift; sourceTree = "<group>"; };
+		9D0DF75F203F70CC74675C62 /* TrackpadDigitizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackpadDigitizer.swift; sourceTree = "<group>"; };
+		AC827E81147114461115A497 /* BIOSHLE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BIOSHLE.swift; sourceTree = "<group>"; };
+		ADBCB73ABAF6C54B6A6DDE2C /* LibretroFrontend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibretroFrontend.swift; sourceTree = "<group>"; };
+		ADDF355254348D214F81A0A6 /* ThumbInstructions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbInstructions.swift; sourceTree = "<group>"; };
+		C01A39B8D5001652379473D0 /* MetalRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalRenderer.swift; sourceTree = "<group>"; };
+		C901C300E3F367F81F545726 /* libretro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = libretro.h; sourceTree = "<group>"; };
+		CA7C360B124B722BB409C5BB /* melonds_libretro.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = melonds_libretro.dylib; sourceTree = "<group>"; };
+		D0845D8C1C8BB109568C219A /* RingBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingBuffer.swift; sourceTree = "<group>"; };
+		D6A663B338F6F37869CF3063 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		E52DAB8AD04F8059C3FB911F /* DirectBoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectBoot.swift; sourceTree = "<group>"; };
+		E8525E3AFFDDA73D23A94EA6 /* CartridgeInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartridgeInterface.swift; sourceTree = "<group>"; };
+		EF40419D803AEA23BBB6A8D1 /* CP15.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CP15.swift; sourceTree = "<group>"; };
+		F1BF2B27012471FAE326B592 /* rhpad.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = rhpad.icon; sourceTree = "<group>"; };
+		F4FA606D69474642014FB4D9 /* HeavenlyPadApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeavenlyPadApp.swift; sourceTree = "<group>"; };
+		F5E790625D82909417F881BC /* IPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ABB918856C73C1068F0789B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F4FDF06196D1FEADD0B23B8 /* Atomics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E61103A661C085BA7C11B77 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2757CCE94CD5DDD1BEAD32A6 /* ContentView.swift */,
+				F4FA606D69474642014FB4D9 /* HeavenlyPadApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		0EC062697BC7C361A4479B54 /* Cartridge */ = {
+			isa = PBXGroup;
+			children = (
+				E8525E3AFFDDA73D23A94EA6 /* CartridgeInterface.swift */,
+				117B485DAAAD6AD56D9894C6 /* NDSLoader.swift */,
+			);
+			path = Cartridge;
+			sourceTree = "<group>";
+		};
+		0F013D328F1ADB4CCB0EDEC0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				C901C300E3F367F81F545726 /* libretro.h */,
+				D6A663B338F6F37869CF3063 /* module.modulemap */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		3254BEE5A97B2350DDB3CF11 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				62C7AA5B923A50A194393BD1 /* AudioEngine.swift */,
+				C01A39B8D5001652379473D0 /* MetalRenderer.swift */,
+				D0845D8C1C8BB109568C219A /* RingBuffer.swift */,
+				9D0DF75F203F70CC74675C62 /* TrackpadDigitizer.swift */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		37B0395741923C62A5CEFFC0 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				47E255E2D685000CD345E1F6 /* SoundChannel.swift */,
+				4052DD3492C4DC3AAE2ECD0A /* SPU.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		49B6E39FAC9FEF80D84C38A4 /* HeavenlyPad */ = {
+			isa = PBXGroup;
+			children = (
+				0E61103A661C085BA7C11B77 /* App */,
+				82FCDD6F931B6EDF9D566620 /* CLibretro */,
+				DA92512489E0D3356EEA8DD3 /* Core */,
+				3254BEE5A97B2350DDB3CF11 /* Platform */,
+				C7AF30B1F9287188AB114B82 /* Resources */,
+			);
+			path = HeavenlyPad;
+			sourceTree = "<group>";
+		};
+		5943C4966D2A7D6E9F33C217 /* Memory */ = {
+			isa = PBXGroup;
+			children = (
+				5F905086E54934026ED425A4 /* Bus.swift */,
+				21BCF524A123F37B91778FE8 /* IORegisters7.swift */,
+				9D099DF614C74E7593601224 /* IORegisters9.swift */,
+				78E368AA838384A239F7B2D9 /* VRAMController.swift */,
+			);
+			path = Memory;
+			sourceTree = "<group>";
+		};
+		69ED739BCF3E0ECBAEC0988D /* BIOS */ = {
+			isa = PBXGroup;
+			children = (
+				AC827E81147114461115A497 /* BIOSHLE.swift */,
+				E52DAB8AD04F8059C3FB911F /* DirectBoot.swift */,
+			);
+			path = BIOS;
+			sourceTree = "<group>";
+		};
+		74FC06512D2C7E1C2D044267 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				332567EC4BF2525E072781EE /* DMA.swift */,
+				F5E790625D82909417F881BC /* IPC.swift */,
+				0EDDDE62A32149E33BA5489A /* Timers.swift */,
+				3FD0D1DC8AC02DB392C0640A /* Touchscreen.swift */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		82FCDD6F931B6EDF9D566620 /* CLibretro */ = {
+			isa = PBXGroup;
+			children = (
+				3AFF09036A3F1E815E241900 /* dummy.c */,
+				0F013D328F1ADB4CCB0EDEC0 /* include */,
+			);
+			path = CLibretro;
+			sourceTree = "<group>";
+		};
+		995DA40E19505D9D420A6E78 = {
+			isa = PBXGroup;
+			children = (
+				F1BF2B27012471FAE326B592 /* rhpad.icon */,
+				49B6E39FAC9FEF80D84C38A4 /* HeavenlyPad */,
+				E22C3AB7EE1912ECB54AD50C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C7AF30B1F9287188AB114B82 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA7C360B124B722BB409C5BB /* melonds_libretro.dylib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DA92512489E0D3356EEA8DD3 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				254605019BF27062364175EB /* Emulator.swift */,
+				ADBCB73ABAF6C54B6A6DDE2C /* LibretroFrontend.swift */,
+				37B0395741923C62A5CEFFC0 /* Audio */,
+				69ED739BCF3E0ECBAEC0988D /* BIOS */,
+				0EC062697BC7C361A4479B54 /* Cartridge */,
+				FCEE121F6530DB775F2B81A0 /* CPU */,
+				DC46AF644FBEE790DCB551AF /* Graphics */,
+				74FC06512D2C7E1C2D044267 /* IO */,
+				5943C4966D2A7D6E9F33C217 /* Memory */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		DC46AF644FBEE790DCB551AF /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				5CEB49B659D13378BF31B926 /* Engine2D.swift */,
+				94862D65A2F9E717743946FF /* GPU.swift */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		E22C3AB7EE1912ECB54AD50C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71080C713A7B872758242668 /* HeavenlyPad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCEE121F6530DB775F2B81A0 /* CPU */ = {
+			isa = PBXGroup;
+			children = (
+				4837095F1D0B310FD9772D00 /* ARMDecoder.swift */,
+				58DD9D568B0AF2C6DE53C1C3 /* ARMInstructions.swift */,
+				EF40419D803AEA23BBB6A8D1 /* CP15.swift */,
+				994BF6B781C8254E9CBAD625 /* CPUState.swift */,
+				ADDF355254348D214F81A0A6 /* ThumbInstructions.swift */,
+			);
+			path = CPU;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69D139B5CF1C3D643AC6EB1B /* HeavenlyPad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33BDD5C64336246ADC35779E /* Build configuration list for PBXNativeTarget "HeavenlyPad" */;
+			buildPhases = (
+				4403347833D379ACED32DEAF /* Sources */,
+				E35135AAF90FD5BEE62D1035 /* Resources */,
+				1ABB918856C73C1068F0789B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeavenlyPad;
+			packageProductDependencies = (
+				C269EF7BEDB86645E4D44F90 /* Atomics */,
+			);
+			productName = HeavenlyPad;
+			productReference = 71080C713A7B872758242668 /* HeavenlyPad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2A06B089FF0F8918759C8DB2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 3B37F4DAFC8C97A8A4CB4214 /* Build configuration list for PBXProject "HeavenlyPad" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 995DA40E19505D9D420A6E78;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				72F34F1CAD6AA6D3872D9613 /* XCRemoteSwiftPackageReference "swift-atomics" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E22C3AB7EE1912ECB54AD50C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69D139B5CF1C3D643AC6EB1B /* HeavenlyPad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E35135AAF90FD5BEE62D1035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E328521BAA5E475E5A5560C /* melonds_libretro.dylib in Resources */,
+				17FB87305170906862117694 /* rhpad.icon in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4403347833D379ACED32DEAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B4F7E6E9AF618E2FA2AE48CE /* ARMDecoder.swift in Sources */,
+				A8DF50C4AEAC0F0127766580 /* ARMInstructions.swift in Sources */,
+				879A48395957C0BF20A40623 /* AudioEngine.swift in Sources */,
+				19F2A27BC9F3D2FE69E03F66 /* BIOSHLE.swift in Sources */,
+				1680B207900BDA5AA6D5E78E /* Bus.swift in Sources */,
+				5CD1D68D1D0E41C06979F291 /* CP15.swift in Sources */,
+				E59F5B344BE9FBFFF6DFB585 /* CPUState.swift in Sources */,
+				A2B082A8672DCB9D7654DC91 /* CartridgeInterface.swift in Sources */,
+				09A121E5B97A08A1895389E7 /* ContentView.swift in Sources */,
+				66FD051482CD06C3874A286A /* DMA.swift in Sources */,
+				E39779871EC59F323B4874EB /* DirectBoot.swift in Sources */,
+				9764146CB2C0BB92FA537041 /* Emulator.swift in Sources */,
+				590EB149459E136692F720EE /* Engine2D.swift in Sources */,
+				478B91080F1AF68A312E1966 /* GPU.swift in Sources */,
+				C7FCE6014697BD2BDA7CF845 /* HeavenlyPadApp.swift in Sources */,
+				4D17046FC9698FDD5F18FAE6 /* IORegisters7.swift in Sources */,
+				0989DBE05851A255D56E2974 /* IORegisters9.swift in Sources */,
+				E278D00944B68B007DDFD09F /* IPC.swift in Sources */,
+				2BE7A5CA3D9FB7868CD85B75 /* LibretroFrontend.swift in Sources */,
+				BF95912714D4BD00A6E9E3CD /* MetalRenderer.swift in Sources */,
+				973BE5F9CB53214077153E50 /* NDSLoader.swift in Sources */,
+				9874DDE1DA8666B338D6E85F /* RingBuffer.swift in Sources */,
+				5C16B1394052C54995FE12B3 /* SPU.swift in Sources */,
+				3BC0AC3004DEC31483D8B863 /* SoundChannel.swift in Sources */,
+				7F36B89CCD375FF5C7C05638 /* ThumbInstructions.swift in Sources */,
+				3D8CEE0A9B40D548E9E2DF42 /* Timers.swift in Sources */,
+				28C23D45379F5B9AA964B5BF /* Touchscreen.swift in Sources */,
+				A78253AF1C44C933A3DB7FF4 /* TrackpadDigitizer.swift in Sources */,
+				3393973CDC88022C05284474 /* VRAMController.swift in Sources */,
+				D49E8C9180770CE9741BF2E7 /* dummy.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		031B5E0125705F89791061A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6D1F1396FA493D0FA0BD6531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = rhpad;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = HeavenlyPad/CLibretro/include;
+				INFOPLIST_KEY_LSMinimumSystemVersion = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antoine.HeavenlyPad;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = HeavenlyPad/CLibretro/include/libretro.h;
+			};
+			name = Debug;
+		};
+		835315A09A01D8B981431A35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = rhpad;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = HeavenlyPad/CLibretro/include;
+				INFOPLIST_KEY_LSMinimumSystemVersion = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.antoine.HeavenlyPad;
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = HeavenlyPad/CLibretro/include/libretro.h;
+			};
+			name = Release;
+		};
+		98C4E7814E6A4348133A3E4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33BDD5C64336246ADC35779E /* Build configuration list for PBXNativeTarget "HeavenlyPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D1F1396FA493D0FA0BD6531 /* Debug */,
+				835315A09A01D8B981431A35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3B37F4DAFC8C97A8A4CB4214 /* Build configuration list for PBXProject "HeavenlyPad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				031B5E0125705F89791061A5 /* Debug */,
+				98C4E7814E6A4348133A3E4B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72F34F1CAD6AA6D3872D9613 /* XCRemoteSwiftPackageReference "swift-atomics" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-atomics.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C269EF7BEDB86645E4D44F90 /* Atomics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72F34F1CAD6AA6D3872D9613 /* XCRemoteSwiftPackageReference "swift-atomics" */;
+			productName = Atomics;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2A06B089FF0F8918759C8DB2 /* Project object */;
+}
